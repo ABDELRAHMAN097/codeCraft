@@ -1,0 +1,550 @@
+.container{
+  padding: 1px 80px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Rectangle{
+  width: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 10px;
+    gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+.toggleLanguage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+.size-icone-moode{
+    font-size: 30px;
+    
+}
+.kratos {
+  padding: 5px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.back{
+    position: absolute;
+    top: -150px;
+    left: -90px;
+    z-index: 1;
+    opacity: 1;
+    width: 400px;
+}
+
+.Cupe{
+  position: absolute;
+  top: 320px;
+  left: 0px;
+  width: 20px;
+  z-index: 1;
+  width: 100px;
+}
+.Cupe2{
+  position: absolute;
+  top: 0;
+  left: 420px;
+  width: 20px;
+  z-index: 1;
+  width: 100px;
+}
+
+.animate1{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--pink-color);
+  opacity: 0.1;
+  position: absolute;
+  top: 280px;
+  left: 240px;
+  z-index: 1;
+}
+.animate2{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--pink-color);
+  opacity: 0.1;
+  position: absolute;
+  top: 200px;
+  left: 340px;
+  z-index: 1;
+}
+.animate3{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--pink-color);
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.animate {
+  animation: circularMotion 7s linear infinite;
+}
+
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg);
+  }
+}
+
+.info,
+.form-container {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  z-index: 10;
+}
+.animation-shape{
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  transform: translate(-50%);
+}
+.text-i{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.98px;
+  max-width: 520px;
+  margin-top: 10px;
+}
+.info p span{
+    margin-right: 5px;
+}
+.info p span img{
+    width: 15px;
+}
+.form-icons{
+    margin: 0 5px;
+}
+.text-i p{
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+@media screen and ((max-width : 767px)){
+    .info p{
+        font-size: 14px;
+    }
+    .back{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0.3;
+      width: 200px;
+  }
+
+  .container{
+    padding: 1px 20px;
+    overflow: hidden;
+  }
+
+  .Cupe2{
+    left: 90px;
+  }
+
+}
+.text-i{
+    margin-top: 10px;
+}
+
+.lamp{
+    font-size: 18px;
+}
+
+/* form */
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.form {
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px 5px rgba(255, 255, 255, 0.562);
+  width: 100%;
+  max-width: 400px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #888;
+}
+.input-container i {
+  margin-right: 10px;
+  color: #888;
+}
+
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 5px;
+  position: relative;
+}
+label {
+  display: flex;
+  align-items: center; /* لتوسيط النص مع الراديو button */
+  gap: 10px; /* المسافة بين الـ radio و النص */
+}
+.radion{
+    margin: 0 5px;
+}
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #4B1E1F, #C4AFAF);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.slog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+.slog:hover h2,
+.slog:hover p {
+  transform: skew(10deg) skewY(-10deg);
+  position: relative;
+  z-index: 10;
+}
+.slog h2 {
+  font-size: 43px;
+  font-weight: 700;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+.slog p {
+  font-size: 33px;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+.dd{
+  width: 150px;
+  position: absolute;
+  top: -18px;
+  right: 5px;
+  z-index: 1;
+}
+
+/* submit Animate  */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation-visible {
+  visibility: visible;
+  animation: bounce 1s infinite;
+}
+
+.animation-hidden {
+  visibility: hidden;
+  animation: none;
+}
+
+.animation-shape {
+  position: absolute;
+  left: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.animation-visible {
+  opacity: 1;
+}
+
+.animation-hidden {
+  opacity: 0;
+}
+
+.animation-shape-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
+/*  */
+  input.custom-input{
+    
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+  
+
+*{
+ .custom-input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+ }
+ .custom-input:hover{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+ }
+
+ .custom-input:active{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+ }
+
+ .custom-input:focus{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+ }
+
+ input:-internal-autofill-selected{
+  
+ }
+ input:-webkit-autofill {
+  appearance: none;
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  color: #000 !important; /* تأكد من تحديد لون النص */
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  background-color: transparent !important;
+}
+
+
+}
+
+
+*{
+  .custom-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  
+  .custom-input:hover,
+  .custom-input:focus,
+  .custom-input:active {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  input:-webkit-autofill {
+    appearance: none !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    color: #000 !important; /* تأكدي من تحديد اللون */
+  }
+  
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+  }
+  
+}
+
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #4B1E1F, #C4AFAF);
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+
+
+
+
+
+
+

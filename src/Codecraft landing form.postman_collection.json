@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "1718d1be-1e9b-4a56-b5c1-36befee152d1",
+		"name": "Codecraft landing form",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37252485"
+	},
+	"item": [
+		{
+			"name": "submit form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pierre",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "pierre@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "45649879",
+							"type": "text"
+						},
+						{
+							"key": "service",
+							"value": "web",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://codecraft1.com/data_saver.php",
+					"protocol": "https",
+					"host": [
+						"codecraft1",
+						"com"
+					],
+					"path": [
+						"data_saver.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
